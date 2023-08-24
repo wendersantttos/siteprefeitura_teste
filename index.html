@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura Municipal de Datas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="fotos/prefeitura.png" alt="Logo da Administração" class="logo-administracao">
+        <h1>Prefeitura Municipal de Datas</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#servicos"><i class="fas fa-cogs"></i> Serviços</a></li>
+                <li><a href="#noticias"><i class="fas fa-newspaper"></i> Notícias</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="http://cidadesmg.com.br/portaltransparencia/faces/user/portal.xhtml?Param=Datas"><i class="fas fa-search"></i> Portal da Transparência</a></li>
+                <li><a href="https://sistema.sintesetecnologia.com.br/sistemas/contracheque/index.xhtml?Param=Datas"><i class="fas fa-money-bill-wave"></i> Contracheque Digital</a></li>
+            </ul>
+        </nav>
+        <img src="fotos/brazao.png" alt="Brasão da Prefeitura" class="logo-brazao">
+    </header>
+
+    <div class="banner">
+        <div class="banner-slide">
+            <img src="fotos/1.jpg" alt="Banner" class="banner-img">
+            <img src="fotos/2.jpg" alt="Banner" class="banner-img">
+        </div>
+        <div class="banner-texto">
+            <h2>Seja Bem-vindo(a) à Prefeitura Municipal de Datas</h2>
+            <p>Conheça nossos serviços e fique por dentro das novidades.</p>
+            <a href="#" class="botao-banner">Saiba mais</a>
+        </div>
+    </div>
+
+    <div class="redes-sociais">
+        <a href="https://www.instagram.com/datasprefeituramunicipal/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/people/Prefeitura-Municipal-de-DATAS/100069807429834/"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <main>
+        <section id="destaques">
+            <h2>Destaques</h2>
+            <p>Aqui estão alguns destaques importantes da Prefeitura Municipal de Datas:</p>
+            <ul>
+                <li>Novos projetos de infraestrutura para a cidade</li>
+                <li>Programa de incentivo ao turismo local</li>
+                <li>Campanha de conscientização sobre reciclagem</li>
+            </ul>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <p>Descubra os serviços oferecidos pela Prefeitura Municipal de Datas:</p>
+            <div class="servico">
+                <img src="fotos/servicos/1.png" alt="Serviço 1">
+                <h3>Casas Populares</h3>
+                <p>Descrição do serviço 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="servico">
+                <img src="fotos/servicos/2.png" alt="Serviço 2">
+                <h3>Água Pública</h3>
+                <p>Descrição do serviço 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="servico">
+                <img src="fotos/servicos/3.png" alt="Serviço 3">
+                <h3>Calçamento</h3>
+                <p>Descrição do serviço 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </section>
+
+        <section id="noticias">
+            <h2>Notícias</h2>
+            <div class="noticia">
+                <img src="fotos/noticias/noticia1.jpg" alt="Notícia 1">
+                <h3>Projeto de revitalização da praça central é aprovado</h3>
+                <p>A prefeitura aprovou um novo projeto de revitalização da praça central da cidade, incluindo áreas de lazer e espaços verdes.</p>
+                <p><a href="#">Leia mais</a></p>
+            </div>
+            <div class="noticia">
+                <img src="fotos/noticias/noticia2.jpg" alt="Notícia 2">
+                <h3>Campanha de vacinação contra a gripe começa este mês</h3>
+                <p>A campanha de vacinação contra a gripe terá início este mês, com postos de vacinação disponíveis em diversos locais da cidade.</p>
+                <p><a href="#">Leia mais</a></p>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para obter mais informações ou esclarecer dúvidas.</p>
+
+            <form id="formulario-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer-centralizado">
+        <p>&copy; 2023 Prefeitura Municipal de Datas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

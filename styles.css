@@ -1,0 +1,267 @@
+/* Estilos gerais */
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0d52e9;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-administracao {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 20px; /* Espaçamento entre a logo e o título */
+}
+
+.logo-brazao {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    margin-left: 40px; /* Espaçamento entre a logo e o título */
+    margin-left: auto; /* Empurra a logo para o lado direito */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+nav ul li i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Banner responsivo */
+.banner {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+    background-color: #ddd;
+}
+
+.banner-slide {
+    display: flex;
+    width: 200%;
+    animation: slide 12s linear infinite;
+}
+
+.banner-img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+#servicos {
+    margin: 40px 0;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.servico img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.servico h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.servico p {
+    margin: 10px 0;
+}
+
+
+
+
+
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Estilos para as seções */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Botões de redes sociais */
+.redes-sociais {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 24px;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos do formulário de contato */
+#contato {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#formulario-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    animation: slide-up 0.5s ease-in-out;
+}
+
+#formulario-contato label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#formulario-contato input[type="text"],
+#formulario-contato input[type="email"],
+#formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#formulario-contato textarea {
+    resize: vertical;
+}
+
+#formulario-contato input[type="text"]:focus,
+#formulario-contato input[type="email"]:focus,
+#formulario-contato textarea:focus {
+    border-color: #0d52e9;
+}
+
+#formulario-contato button {
+    background-color: #0d52e9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#formulario-contato button:hover {
+    background-color: #073ca7;
+}
+
+/* Animações */
+@keyframes slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos para o banner responsivo */
+.banner {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+    background-color: #ddd; /* Cor de fundo do banner */
+}
+
+.banner-slide {
+    display: flex;
+    width: 200%; /* Duas imagens ocupam 200% da largura do banner */
+    animation: slide 12s linear infinite; /* Animação de carrossel com 6 segundos para cada imagem */
+}
+
+.banner-img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo para centralizar o footer */
+.footer-centralizado {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d52e9;
+    color: #fff;
+}
